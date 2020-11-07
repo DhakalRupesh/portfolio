@@ -1,0 +1,258 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
+/* universal css */
+*,::before,::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
+}
+h1,h2,p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* color */
+:root{
+    --first-color: #00ACC1;
+    --second-color: #0E2431;
+  }
+  
+
+/* main css start*/
+/* navbar */
+/* .nav-container{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.2);
+} */
+
+.navbar{
+    height: 80px;
+    background-color: #ffffff !;
+}
+
+.navbar .nav-image {
+    height: 25%;
+    width: 125px;
+}
+
+.navbar ul li a {
+    font-size: 1rem !important;
+    text-transform: capitalize !important;
+    font-weight: bold;
+    color: #1C1C1C !important;
+}
+
+.navbar ul a:hover {
+    position: relative;
+    color: #00ACC1 !important;
+    /* border-bottom: 1px solid #1C1C1C; */
+}
+
+.navbar ul a:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2.6rem;
+    background-color: var(--first-color);
+}
+
+/*Active nav links*/
+.navbar ul li.active_link a{
+    font-size: 1rem !important;
+    text-transform: capitalize !important;
+    font-weight: bold;
+    color: #00ACC1 !important;
+}
+
+/*----- nav bar scroll----- */
+.scrolling-active{
+    transition: 0.7s;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.2);
+}
+
+/*-------- navbar end --------*/
+
+/*-------- home body start --------*/
+.body-internalcontainer{
+    color: #474747;
+}
+
+.body-internalcontainer .body-list {
+    margin: 0;
+    padding: 0;
+}
+
+.body-name{
+    font-size: 55px;
+}
+
+.body-profession{
+    font-size: 30px;
+}
+
+.body-list-item{
+    font-size: 16px !important;
+}
+
+.body-internalcontainer .body-list li {
+   list-style-type: none;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.body-list-social li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.body-list-social li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.body-list-social a{
+    text-decoration: none !important;
+    color: #474747;
+}
+
+.body-list-social a:hover{
+    color: #00ACC1;
+}
+
+.body-greet{
+    background-color: #00ACC1;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    width: 22%;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.body-internalcontainer1 .profile {
+    /* margin: 0 auto; */
+    margin-top: 40px;
+    width: 88%;
+}
+/* -------- home body end --------*/
+/* -------- home body about start --------  */
+.about-container{
+    color: #474747;
+}
+
+.body-aboutcontainer .img-about {
+    margin: 0 16%;
+    width: 70%;
+}
+
+.good-at{
+    color: #00ACC1;
+}
+
+.about-goodat-container{
+    margin: 0;
+    padding: 0;
+}
+
+.about-goodat-container li{
+    display: inline-block;
+    border-radius: 4px;
+    margin: 0px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 4px 0px;
+}
+
+.about-goodat-container span {
+    border: 2px solid #00ACC1;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.about-btn-contactme {
+    background-color: #00ACC1;
+    border-radius: 20px;
+    border: 3px solid #00ACC1;
+    color: #fff;
+}
+
+.about-btn-contactme:hover {
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 3px solid #00ACC1;
+    color: #474747;
+}
+
+.about-myjob {
+    color: #474747;
+}
+
+.about-card {
+    border: none;
+    /* box-shadow: 0 3px 1rem rgba(0,0,0,0.2); */
+}
+
+.about-card .about-icon {
+    font-size: 30px;
+} 
+.uidesign {
+    color: #A182FA;
+}
+
+.webdev{
+    color: #EF8067;
+}
+
+.appdev{
+    color: #3CA0E5;
+}
+/* -------- home body about end --------  */
