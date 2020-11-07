@@ -81,7 +81,7 @@
                 <div class="col-10 mx-auto">
                     <div class="row">
                         <div class="col-md-6 pt-5 order-2 order-lg-1 d-flex justify-content-center flex-column body-internalcontainer">
-                            <span class="body-greet col-sm-1">Hi I'm</span>
+                            <p class="greeting d-flex-block"><span class="body-greet col-sm-1">Hi I'm</span></p>
                             <h1 class="font-weight-bold pt-4 body-name">Rupesh Dhakal</h1>
                             <h4 class="body-profession">Full stack developer</h4>
                             <ul class="body-list pt-4">
@@ -119,10 +119,10 @@
                         </div>
 
                         <div class="col-lg-6 pt-5 order-2 order-lg-2 header-img body-aboutcontainer1">
-                            <h1 class="font-weight-bold mt-4">About Me</h1>
-                            <p class="pt-3 pb-4 text-justify">Hello, I’m Rupesh Dhakal, full stack developer based on Kathmandu. 
+                            <h1 class="font-weight-bold mt-4 about-title">About Me</h1>
+                            <p class="pt-3 pb-4 text-justify about-desc">Hello, I’m Rupesh Dhakal, full stack developer based on Kathmandu. 
                                 I have rich personal experience in App development website design and customization. 
-                               <br><strong class="good-at ">I am good at</strong></p>
+                               <br><strong class="good-at">I am good at</strong></p>
                             
                             <div class="about-goodat-container">
                                 <ul>
@@ -152,9 +152,9 @@
     <div class="container-fluid pb-5 pt-5 about-myjob">
         <div class="row">
             <div class="col-10 mx-auto">
-                <div class="row gy-4">
+                <div class="row gy-5">
                     <div class="py-5">
-                        <h2 class="text-center font-weight-bold">What I Do</h2>
+                        <h2 class="text-center font-weight-bold what-ido">What I Do</h2>
                     </div>
                     <div class="col-md-4 col-10 mx-auto">
                         <div class="card shadow about-card">
@@ -199,20 +199,126 @@
     </div>
     
     <!-- skills -->
-    <div id="skills" class="container-fluid pb-5 pt-5 about-myjob">
+    <section id="skills" class="p-5 pt-5"></section>
+    <section class="d-flex align-items-center mb-4 pb-5">
+        <div class="container-fluid skill-container">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 order-1 order-lg-1 d-flex justify-content-center flex-column">
+                            <div class="py-5">
+                                <h2 class="text-center font-weight-bold tech-text">Technical Skills</h2>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar">
+                                    <div class="info">
+                                        <span>Android</span>
+                                    </div>
+                                    <div class="progress-line mt-2 android"><span></span></div>
+                                </div>
+
+                                <div class="bar pt-4">
+                                    <div class="info">
+                                        <span>React Js</span>
+                                    </div>
+                                    <div class="progress-line mt-2 react"><span></span></div>
+                                </div>
+
+                                <div class="bar pt-4">
+                                    <div class="info">
+                                        <span>UI/UX</span>
+                                    </div>
+                                    <div class="progress-line mt-2 ui"><span></span></div>
+                                </div>
+
+                                <div class="bar pt-4">
+                                    <div class="info">
+                                        <span>Html/CSS</span>
+                                    </div>
+                                    <div class="progress-line mt-2 html"><span></span></div>
+                                </div>
+
+                                <div class="bar pt-4">
+                                    <div class="info">
+                                        <span>Javascript</span>
+                                    </div>
+                                    <div class="progress-line mt-2 js"><span></span></div>
+                                </div>
+
+                                <div class="bar pt-4">
+                                    <div class="info">
+                                        <span>Backend(SQL/NoSQL)</span>
+                                    </div>
+                                    <div class="progress-line mt-2 backend"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 order-1 order-lg-1 d-flex justify-content-center flex-column">
+                            <div class="py-5 propskill">
+                                <h2 class="text-center font-weight-bold">Professional Skills</h2>
+                            </div>
+                            <img class="img-skill-circle" src="images/skillcircle.png" alt="circular chart">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education what I do -->
+    <div class="container-fluid pb-5 pt-5 about-myjob">
         <div class="row">
             <div class="col-10 mx-auto">
-                <div class="row gy-4">
+                <div class="row gy-5">
                     <div class="py-5">
-                        <h2 class="text-center font-weight-bold">Skills</h2>
+                        <h2 class="text-center font-weight-bold what-ido">Education</h2>
                     </div>
                     <div class="col-md-4 col-10 mx-auto">
-                        
+                        <div class="card shadow about-card">
+                            <div class="card-body">
+                                <p class="about-icon"><i class='bx bxs-graduation uidesign' ></i>
+                                <h6 class="font-weight-bold pt-2 pb-2">BSc(Hons) Computing <strong class="education_board"><i>Coventry University</i></strong></h6>
+                                <p class="text-justyfy">Only building the website is not enoguh,
+                                    rather it should look good and shoud be useable. I am fond of 
+                                    creating UI/UX design using various tools like Figma, XD, Illustrator and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 mx-auto">
+                        <div class="card shadow about-card">
+                            <div class="card-body">
+                                <p class="about-icon"><i class='bx bx-bus-school webdev' ></i>
+                                <h6 class="font-weight-bold pt-2 pb-2">Higher Secondary <strong class="education_board"><i>HSEB</i></strong></h6>
+                                <p class="text-justyfy">I can built a mobile applicaion using 
+                                    Android as well as other technologies like React Native. Even though 
+                                I can develop an applicaion nicely, I always welcome new challenges and learning opportunity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-10 mx-auto">
+                        <div class="card shadow about-card">
+                            <div class="card-body">
+                                <p class="about-icon"><i class='bx bxs-school appdev'></i>
+                                <h6 class="font-weight-bold pt-2 pb-2">School <strong class="education_board"><i>Manasalu.H.P.S.S</i></strong> </h6>
+                                <p class="text-justyfy">I can develop a good look website and also create backend for 
+                                    handeling requests of user using various technologies like React, Html, css, php
+                                    laravel and more.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+    
 
     <!-- scripting section -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" 

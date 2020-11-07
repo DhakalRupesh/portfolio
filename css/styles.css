@@ -1,11 +1,13 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Poppins', sans-serif !important; */
 }
 /* universal css */
 *,::before,::after{
@@ -68,7 +70,7 @@ img{
     font-size: 1rem !important;
     text-transform: capitalize !important;
     font-weight: bold;
-    color: #1C1C1C !important;
+    color: #474747 !important;
 }
 
 .navbar ul a:hover {
@@ -255,4 +257,140 @@ img{
 .appdev{
     color: #3CA0E5;
 }
+
+.skill-container {
+    color: #474747;
+}
+
+.skill-bar .bar .info span{
+    font-weight: 500;
+}
+
+.skill-bar .bar .progress-line {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    transform: scaleX(0);
+    background: #8C8C8C;
+    border-radius: 5px;
+    transform-origin: left;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    width: 90%;
+    background: #3CA0E5;
+    position: absolute;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line.android span {
+    width: 80%;    
+}
+
+.bar .progress-line.react span {
+    width: 65%;
+}
+
+.bar .progress-line.ui span {
+    width: 80%;
+}
+
+.bar .progress-line.html span {
+    width: 75%;
+}
+
+.bar .progress-line.js span {
+    width: 70%;
+}
+
+.bar .progress-line.backend span {
+    width: 70%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.bar .progress-line span::after {
+   position: absolute;
+   content: "100%";
+   right: 0;
+   top: -28px;
+   color: #fff;
+   font-size: 12px;
+   font-weight: 500;
+   background: #000;
+   padding: 1px 8px;
+   border-radius: 3px;
+   opacity: 0;
+   animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+.bar .progress-line.android span::after {
+    content: "85%";    
+}
+
+.bar .progress-line.react span::after {
+    content: "65%";
+}
+
+.bar .progress-line.ui span::after {
+    content: "80%";
+}
+
+.bar .progress-line.html span::after {
+    content: "75%";
+}
+
+.bar .progress-line.js span::after {
+    content: "70%";
+}
+
+.bar .progress-line.backend span::after {
+    content: "70%";
+}
+
+/* professional skill */
+.img-skill-circle {
+    width: 60%;
+    margin: 0 auto;  
+}
+
+/* Education */
+.education_board {
+    color: #3CA0E5;
+}
+
 /* -------- home body about end --------  */
