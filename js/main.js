@@ -33,7 +33,6 @@ sr.reveal('.body-list-social',{ interval: 100});
 
 /*SCROLL ABOUT*/
 sr.reveal('.img-about',{}); 
-sr.reveal('.about-title',{delay: 100}); 
 sr.reveal('.about-desc',{delay: 100});
 sr.reveal('.about-goodat-container',{delay: 100}); 
 sr.reveal('.about-btn-contactme',{delay: 100}); 
@@ -45,15 +44,14 @@ sr.reveal('.about-card h3',{delay: 100});
 sr.reveal('.about-card p',{delay: 100}); 
 
 /*SCROLL SKILLS*/
-sr.reveal('.tech-text',{}); 
-sr.reveal('.propskill',{}); 
 sr.reveal('.bar',{interval: 100}); 
 sr.reveal('.img-skill-circle',{delay: 100});
 
 // contact
 sr.reveal('.copyright', {delay: 100});
-sr.reveal('.contact-me',{delay: 100}); 
 sr.reveal('.contact-icon i',{delay: 100}); 
 sr.reveal('.contact-card h4',{delay: 100});
 sr.reveal('.contact-card p',{delay: 100}); 
 
+// education
+sr.reveal('.edu-quilification', {delay: 100});
