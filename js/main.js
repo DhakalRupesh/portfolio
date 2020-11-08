@@ -51,7 +51,7 @@ sr.reveal('.bar',{interval: 100});
 sr.reveal('.img-skill-circle',{delay: 100});
 
 // contact
-sr.reveal('.contact-me',{}); 
+sr.reveal('.contact-me',{delay: 100}); 
 sr.reveal('.contact-icon i',{delay: 100}); 
 sr.reveal('.contact-card h4',{delay: 100});
 sr.reveal('.contact-card p',{delay: 100}); 
