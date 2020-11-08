@@ -389,8 +389,43 @@ img{
 }
 
 /* Education */
+.edu-container {
+    color: #474747;
+}
+
 .education_board {
     color: #3CA0E5;
 }
 
+/* portfolio */
+.portlink {
+    color: #474747;
+    line-height: 1;
+}
+
+.portlink:hover {
+    color: #3CA0E5;
+}
+
+.portfolio-image{
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.portfolio-image img{
+    transition: 1s;
+    cursor: pointer;
+}
+.portfolio-image img:hover{
+    transform: scale(1.1);
+}
+
+/* contact */
+.contact-container {
+    color: #474747;
+}
+
+.contact-card .contact-icon {
+    font-size: 60px;
+} 
 /* -------- home body about end --------  */
