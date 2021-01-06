@@ -58,6 +58,3 @@ sr.reveal(".contact-card p", { delay: 100 });
 
 // education
 sr.reveal(".edu-quilification", { delay: 100 });
-
-// date
-var today = new Date() var year = today.getFullYear() document.write(year)
